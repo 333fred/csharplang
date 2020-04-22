@@ -1,6 +1,6 @@
 # Factory Constructors (v2)
 
-## Summary
+## Background
 
 This proposal builds off of @jaredpar's proposal, found [here](https://github.com/jaredpar/csharplang/blob/factory/proposals/factory-methods.md). This
 proposal, however, goes in a slightly different tack. Many of the issues the LDM found with the original proposal were around the sheer broadness of it.
