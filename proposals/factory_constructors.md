@@ -139,6 +139,14 @@ public class IFactory
     public factory I(string param1) => ...;
     public static factory I(object param1) => ...;
 }
+class Widget
+{
+    static factory Widget() => new Widget(string.Empty, -1);
+    static factory Widget(Widget widget) => new Widget() { Title = widget.Title, Id = widget.Id };
+    protected Widget(string title, int id) => (Title, Id) = (title, id);
+    public string Title { get; init; }
+    public int Id { get; set; }
+}
 ```
 
 Factory constructors are invoked by calling `new`, and providing a primary expression that resolves to a factory constructor.
