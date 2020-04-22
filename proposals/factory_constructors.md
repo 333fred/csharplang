@@ -112,8 +112,8 @@ Some examples:
 ```cs
 public static interface I
 {
-    // Define a copy constructor for the ability to `with` any `I` implementation
     int MyProperty { get; init; }
+    // Define a copy constructor for the ability to `with` any `I` implementation
     factory I();
 }
 public abstract class AbsI : I
