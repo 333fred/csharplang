@@ -198,6 +198,12 @@ This proposal introduces a new contextual keyword, `factory`, and if a user had 
 be unable to use the feature, or upgrading to C# (whatever version this would ship in) would break them. Is there an existing keyword
 or different syntax we could use to avoid this?
 
+### Allow `async` factories
+
+Another big reason people create static factory methods to construct objects is in order to make them async, which constructors today
+do not allow. We could conceivably allow specifying the `async` keyword in the factory signature and have the factory return a `Task<T>`,
+or any other task-like type.
+
 ## Considerations
 
 ### Splitting up the feature
