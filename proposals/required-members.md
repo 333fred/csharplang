@@ -123,7 +123,7 @@ public class C
     // Advertises that just Prop1 is required.
     public C() : init(Prop2)
     {
-        Prop1 = 1;
+        Prop2 = 1;
     }
 }
 ```
